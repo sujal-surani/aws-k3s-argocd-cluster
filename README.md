@@ -15,7 +15,6 @@ This repository acts as the single source of truth for both infrastructure and a
 
 ```text
 .
-├── git.sh                  # Automation script for Git operations
 ├── k8s/                    # Kubernetes declarative manifests
 │   ├── deployment.yaml     # Web application pod specifications 
 │   ├── ingress.yaml        # Traefik routing rules for public access
@@ -28,7 +27,6 @@ This repository acts as the single source of truth for both infrastructure and a
     ├── providers.tf        # AWS provider configuration
     └── security.tf         # Firewall rules (Ports 80, 6443)
 ```
-*(Note: Terraform state files and local `.terraform/` directories are securely excluded via `.gitignore` to prevent secret leakage).*
 
 ## Deployment Lifecycle
 
