@@ -3,7 +3,7 @@ kind: Deployment
 metadata:
   name: aws-k3s-webapp
 spec:
-  replicas: 3
+  replicas: 2
   selector:
     matchLabels:
       app: webapp
